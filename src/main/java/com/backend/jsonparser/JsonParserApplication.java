@@ -9,8 +9,8 @@ public class JsonParserApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(JsonParserApplication.class, args);
-		JsonParser js = new JsonParser();
-		js.checkJsonElements();
+		JsonParser jsonParser = new JsonParser(new JsonLineValidity());
+		jsonParser.checkJsonElements();
 	}
 
 }
